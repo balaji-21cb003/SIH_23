@@ -36,6 +36,7 @@
 import React from "react";
 import { AiOutlineSchedule } from "react-icons/ai";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function Video() {
   const containerStyle = {
@@ -73,14 +74,18 @@ export default function Video() {
         <source src="/video.mp4" type="video/mp4" />
         {/* Your browser does not support the video tag. */}
       </video>
-      <div style={textContainerStyle}>
+      
+        <Link  href={"/appointment"}>
+        <div style={textContainerStyle}>
         <motion.div initial="initial" animate="animate" transition={h3Animation}>
           <div className="text-9xl">
           <AiOutlineSchedule />
           </div>
           <motion.h3 variants={h3Animation} className="text-3xl">Book your appointment!</motion.h3>
         </motion.div>
-      </div>
+        </div>
+
+        </Link>
     </div>
   );
 }

@@ -47,7 +47,7 @@ export default function Cards() {
             isPressable
             onPress={() => console.log("item pressed")}
           >
-            <CardBody className="p-0 bg-[#286bff]">
+            <CardBody className="p-0 bg-[#E1ECC8]">
               <Image
                 shadow="sm"
                 radius="lg"
