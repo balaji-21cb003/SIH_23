@@ -33,7 +33,7 @@ export default function BookingCard() {
     },
     {
       img: "/doctor3.jpg",
-      name: "Dr. Sarah Davis",
+      name: "Dr. karan nga",
       department: "Orthopedics",
       about:
         "Dr. Sarah Davis is an orthopedic specialist known for her expertise in treating bone and joint disorders.",
