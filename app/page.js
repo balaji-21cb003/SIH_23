@@ -8,6 +8,8 @@ export default function Home() {
     <div>
       <Navbar />
       <Video />
+      {/* <h3 className="">Book your appointment</h3>  */}
+
       <Cards />
       
     </div>
