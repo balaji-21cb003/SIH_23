@@ -15,7 +15,7 @@ export default function Navbar() {
           </a>
         </li>
         <li className="text-black">
-          <a href="#department">Department</a>
+          <a href="#department">Departments</a>
         </li>
       </ul>
     </div>
