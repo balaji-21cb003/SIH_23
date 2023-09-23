@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React from "react";
 import { Card, CardBody, Image } from "@nextui-org/react";
 
@@ -24,6 +24,7 @@ export default function Cards() {
       img: "/dermatology.jpg",
       //   price: "$5.30",
     },
+
     {
       title: "Anesthesiology",
       img: "anesthesiology.jpg",
@@ -37,32 +38,36 @@ export default function Cards() {
   ];
 
   return (
-    <div className="text-center">
-      <h1 className="text-5xl pt-12">CATEGORIES</h1>
-      <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 p-4">
-        {list.map((item, index) => (
-          <Card
-            shadow="sm"
-            key={index}
-            isPressable
-            onPress={() => console.log("item pressed")}
-          >
-            <CardBody className="p-0 bg-[#E1ECC8]">
-              <Image
-                shadow="sm"
-                radius="lg"
-                // width="100%"
-                alt={item.title}
-                className="w-fit object-cover h-fit"
-                src={item.img}
-              />
-              <br></br>
-              <h3 className="text-center text-3xl flex flex-col p-2">{item.title}</h3>
-              <br></br>
-            </CardBody>
-          </Card>
-        ))}
+    <section id="dept">
+      <div id="#dept" className="text-center">
+        <h1 className="text-5xl pt-12">CATEGORIES</h1>
+        <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 p-4">
+          {list.map((item, index) => (
+            <Card
+              shadow="sm"
+              key={index}
+              isPressable
+              onPress={() => console.log("item pressed")}
+            >
+              <CardBody className="p-0 bg-[#E1ECC8]">
+                <Image
+                  shadow="sm"
+                  radius="lg"
+                  // width="100%"
+                  alt={item.title}
+                  className="w-fit object-cover h-fit"
+                  src={item.img}
+                />
+                <br></br>
+                <h3 className="text-center text-3xl flex flex-col p-2">
+                  {item.title}
+                </h3>
+                <br></br>
+              </CardBody>
+            </Card>
+          ))}
+        </div>
       </div>
-    </div>
+    </section>
   );
 }

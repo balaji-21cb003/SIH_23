@@ -35,6 +35,7 @@
 "use client"
 import React from "react";
 import { AiOutlineSchedule } from "react-icons/ai";
+import { TiTickOutline } from "react-icons/ti";
 import { motion } from "framer-motion";
 import Link from "next/link";
 
@@ -56,7 +57,7 @@ export default function Video() {
     position: "absolute",
     bottom: "70px", // Adjust this value for the desired vertical position
     left: "40px", // Adjust this value for the desired horizontal position
-    color: "#0d9967", // You can change the text color here
+    color: "#000000", // You can change the text color here
     fontweight: "bold",
   };
 
@@ -81,7 +82,7 @@ export default function Video() {
           <div className="text-9xl">
           <AiOutlineSchedule />
           </div>
-          <motion.h3 variants={h3Animation} className="text-3xl">Book your appointment!</motion.h3>
+          <motion.h3 variants={h3Animation} className="text-3xl flex flex-row">Book your appointment <TiTickOutline/></motion.h3>
         </motion.div>
         </div>
 

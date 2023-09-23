@@ -1,6 +1,7 @@
 "use client";
-import Modal from './Modal'
-import React, { useState } from 'react';
+import Modal from "./Modal";
+import React, { useState } from "react";
+import { GiVideoConference } from "react-icons/gi";
 
 import {
   Card,
@@ -22,7 +23,7 @@ export default function BookingCard() {
   };
 
   const handleCloseModal = () => {
-    setIsModalOpen(false); 
+    setIsModalOpen(false);
   };
   const doctors = [
     {
@@ -30,7 +31,7 @@ export default function BookingCard() {
       name: "Dr. John Smith",
       department: "Cardiology",
       about:
-        "Dr. John Smith is  experience in diagnosing and treating heart-related issues.",
+        " Dr. John Smith, a seasoned expert, excels in diagnosing and treating a wide range of heart-related conditions.",
       experience: "15 years",
       hospitalname: "ABC Cardiac Hospital",
     },
@@ -63,7 +64,6 @@ export default function BookingCard() {
             <CardHeader floated={false} color="blue-gray">
               <img src={data.img} alt="ui/ux review check" />
               <div className="to-bg-black-10 absolute inset-0 h-full w-full bg-gradient-to-tr from-transparent via-transparent to-black/60 " />
-              
             </CardHeader>
             <CardBody>
               <div className="mb-3 flex  items-center justify-evenly">
@@ -118,7 +118,7 @@ export default function BookingCard() {
                 {data.hospitalname} of experience
               </Typography>
             </CardBody>
-            <CardFooter className="pt-3">
+            <CardFooter className="p-3 mt-[10px]">
               <Button
                 onClick={handleOpenModal}
                 className="text-lg p-3 bg-[#0d9967] text-white hover:bg-red-700"
@@ -126,11 +126,17 @@ export default function BookingCard() {
               >
                 Book your slot!
               </Button>
+              <Button
+                onClick={handleOpenModal}
+                className="text-lg p-3 bg-[#0d9967] mt-[10px] flex flex-row justify-center items-center text-white hover:bg-red-700"
+                fullWidth={true}
+              >
+                 Video consult <GiVideoConference />
+              </Button>
             </CardFooter>
           </Card>
         ))}
-        <Modal isOpen={isModalOpen} onClose={handleCloseModal}/>
-
+        <Modal isOpen={isModalOpen} onClose={handleCloseModal} />
       </div>
     </div>
   );
