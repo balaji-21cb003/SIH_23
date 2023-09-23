@@ -1,4 +1,7 @@
 "use client";
+import Modal from './Modal'
+import React, { useState } from 'react';
+
 import {
   Card,
   CardHeader,
@@ -12,6 +15,15 @@ import {
 import Navbar from "../component/nav";
 
 export default function BookingCard() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleOpenModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false); 
+  };
   const doctors = [
     {
       img: "/doctor1.jpg",
@@ -108,6 +120,7 @@ export default function BookingCard() {
             </CardBody>
             <CardFooter className="pt-3">
               <Button
+                onClick={handleOpenModal}
                 className="text-lg p-3 bg-[#0d9967] text-white hover:bg-red-700"
                 fullWidth={true}
               >
@@ -116,6 +129,8 @@ export default function BookingCard() {
             </CardFooter>
           </Card>
         ))}
+        <Modal isOpen={isModalOpen} onClose={handleCloseModal}/>
+
       </div>
     </div>
   );

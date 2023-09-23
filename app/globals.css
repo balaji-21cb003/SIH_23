@@ -25,3 +25,45 @@ body {
     )
     rgb(var(--background-start-rgb)); */
 }
+
+.modal-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  padding: 1rem;
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.close {
+  float: right;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.modal-body {
+  padding: 1rem;
+}
+
+.btn-primary {
+  background-color: #3490dc;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+  background-color: #2779bd;
+}
+ .form-input{
+  border:1px solid black;
+  border-radius: 5px;
+ }
