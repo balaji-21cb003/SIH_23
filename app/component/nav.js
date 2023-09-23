@@ -1,5 +1,6 @@
 import React from "react";
 import { AiFillHome } from "react-icons/ai";
+import Link from "next/link";
 
 export default function Navbar() {
   return (
@@ -17,6 +18,11 @@ export default function Navbar() {
         <li className="text-black">
           <a href="#department">Departments</a>
         </li>
+        <Link href={"/login"}>
+          <li className="text-black">
+            <a>Login / Sign up</a>
+          </li>
+        </Link>
       </ul>
     </div>
   );

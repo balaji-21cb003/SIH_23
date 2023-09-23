@@ -67,3 +67,74 @@ body {
   border:1px solid black;
   border-radius: 5px;
  }
+
+
+
+
+ /* login */
+ *{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: translate(-50%, -50%);
+  width:400px;
+  height: 400px;
+  background-color: #040D12;
+  border-radius: 15px;
+}
+.heading{
+  color: white;
+  text-align: center;
+}
+input{
+  border-radius: 50px;
+  border: 1px solid aqua;
+  background-color: #040D12;
+  text-align: center;
+  padding: 8px;
+  margin: 13px 20px;
+  width: 250px;
+  color: #D8D9DA;
+}
+h6{
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+.btn{
+  display: block;
+  align-items: center;
+  margin-top: 15px;
+  border-radius: 50px;
+  border: 1px solid #F8DE22;
+  padding: 8px 65px;
+  background-color: #040D12;
+  color: #ADC4CE;
+  cursor: pointer;
+}
+.btn_ls{
+  display: block;
+  align-items: center;
+  border-radius: 50px;
+  border: 1px none;
+  padding: 8px 10px;
+  background-color: #040D12;
+  color: #ADC4CE;
+  cursor: pointer;
+  margin: 4px;
+}
+.home_btns{
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+.do{
+  color: #D8D9DA;
+}
