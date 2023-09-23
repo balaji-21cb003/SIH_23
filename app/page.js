@@ -1,4 +1,3 @@
-import Link from "next/link";
 import Navbar from "./component/nav";
 import Video from "./component/video";
 import Cards from "./component/cards";
@@ -9,7 +8,6 @@ export default function Home() {
       <Navbar />
       <Video />
       <Cards />
-      
     </div>
   );
 }
